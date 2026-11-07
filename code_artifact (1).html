@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>もどる - 호쿠세이고교 비밀문서</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Gowun Batang for aesthetic feel & Inter for general typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            moss: {
+              900: '#0e1610',
+              800: '#142118',
+              700: '#1c3023',
+              600: '#284633',
+              500: '#386047',
+              400: '#4e8262',
+              300: '#75ab8a',
+              200: '#a3d1b6',
+              100: '#d5ebd9',
+            },
+            frog: {
+              accent: '#64ba7b',
+              glow: '#4ade80',
+              lily: '#2e4d38'
+            }
+          },
+          fontFamily: {
+            gowun: ['"Gowun Batang"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0b110c;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(56, 96, 71, 0.15) 0%, transparent 75%),
+        radial-gradient(circle at 100% 100%, rgba(20, 33, 24, 0.4) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .gowun-font {
+      font-family: 'Gowun Batang', serif;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0e1610;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #284633;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #386047;
+    }
+
+    /* Subtle frog pad backdrop pattern */
+    .bg-frog-pattern {
+      background-image: radial-gradient(#284633 1px, transparent 1px);
+      background-size: 24px 24px;
+      background-opacity: 0.2;
+    }
+
+    /* Glassmorphism card style */
+    .glass-card {
+      background: rgba(20, 33, 24, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(78, 130, 98, 0.2);
+    }
+
+    .glass-card-secret {
+      background: rgba(18, 25, 20, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(100, 186, 123, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen py-10 px-4 sm:px-6 lg:px-8 bg-frog-pattern text-slate-200">
+
+  <div class="max-w-4xl mx-auto space-y-8">
+    
+    <!-- HEADER BAR -->
+    <header class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden text-center border-b-2 border-moss-500/40 shadow-2xl">
+      <!-- Water Drop & Frog Motif Background Decorations -->
+      <div class="absolute -top-10 -right-10 text-moss-700/20 text-9xl select-none pointer-events-none">
+        <i class="fa-solid font-bold fa-frog"></i>
+      </div>
+      <div class="absolute -bottom-10 -left-10 text-moss-700/20 text-8xl select-none pointer-events-none">
+        <i class="fa-solid fa-water"></i>
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center">
+        <!-- Badge -->
+        <div class="w-full flex justify-center items-center mb-3">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-moss-700/50 text-moss-200 border border-moss-500/30">
+            <i class="fa-solid fa-frog text-frog-accent"></i> #호쿠세이고교_비밀문서
+          </span>
+        </div>
+
+        <!-- Site Title -->
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-widest text-moss-100 gowun-font my-1 drop-shadow-md">
+          もどる
+        </h1>
+      </div>
+    </header>
+
+    <!-- CATCHPHRASE & ONE LINE QUOTE -->
+    <section class="glass-card rounded-2xl p-6 sm:p-8 text-center space-y-4 relative shadow-lg">
+      <div class="text-moss-400 text-sm font-semibold tracking-wider flex items-center justify-center gap-2">
+        <i class="fa-solid fa-quote-left text-xs text-frog-accent"></i> CATCHPHRASE
+      </div>
+      
+      <!-- Catchphrase -->
+      <div class="text-xl sm:text-2xl font-bold gowun-font text-moss-100 px-4 py-2">異夢</div>
+
+      <div class="w-16 h-0.5 bg-moss-600/50 mx-auto my-3"></div>
+
+      <!-- One-line quote -->
+      <div class="text-moss-300 text-sm font-medium">
+        한마디: <span class="text-moss-100 gowun-font italic">“돌아왔어.”</span>
+      </div>
+    </section>
+
+    <!-- BASIC PROFILE GRID & APPEARANCE -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Basic Info Card (1 Col) -->
+      <section class="glass-card rounded-2xl p-6 space-y-4 md:col-span-1 shadow-lg">
+        <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+          <i class="fa-solid fa-address-card"></i> 기본 정보
+        </h2>
+        
+        <div class="space-y-3 text-sm">
+          <div>
+            <span class="text-xs text-moss-400 block font-medium">이름</span>
+            <div class="text-lg font-bold text-moss-100 gowun-font">하시레 카에루</div>
+          </div>
+          <div>
+            <span class="text-xs text-moss-400 block font-medium">성별</span>
+            <div class="text-moss-200">여성</div>
+          </div>
+          <div>
+            <span class="text-xs text-moss-400 block font-medium">나이</span>
+            <div class="text-moss-200">18세</div>
+          </div>
+          <div>
+            <span class="text-xs text-moss-400 block font-medium">키 / 몸무게</span>
+            <div class="text-moss-200">179cm / 표준</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Appearance Card (2 Cols) -->
+      <section class="glass-card rounded-2xl p-6 space-y-4 md:col-span-2 shadow-lg">
+        <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+          <i class="fa-solid fa-user"></i> 외관
+        </h2>
+
+        <div class="text-sm text-moss-200 leading-relaxed whitespace-pre-line">
+        </div>
+      </section>
+    </div>
+
+    <!-- PERSONALITY & CHARACTERISTICS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Personality -->
+      <section class="glass-card rounded-2xl p-6 space-y-3 shadow-lg">
+        <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+          <i class="fa-solid fa-heart"></i> 성격
+        </h2>
+        <div class="text-sm text-moss-200 leading-relaxed whitespace-pre-line">
+사교, 사려, 사념
+
+―지나가는 모든 것에게 관용을.
+―지나치는 모든 것에게 관조를.
+
+지난 날의 만용을 용서해 줘.</div>
+      </section>
+
+      <!-- Characteristics -->
+      <section class="glass-card rounded-2xl p-6 space-y-3 shadow-lg">
+        <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+          <i class="fa-solid fa-sparkles"></i> 특징
+        </h2>
+        <div class="text-sm text-moss-200 leading-relaxed whitespace-pre-line">
+• Rh- O형 / 3월 20일
+• 나긋하고 조용한 음성.
+• 말투 : 존반혼용.
+• 상처가 생기면 소독 및 치료행위를 하지 않음.
+• 눈을 깜빡이는 횟수가 적어 건조해보임.
+• 타인에 대한 관심이 모호, 다만 한번 꽂히면 사소한 내용도 기억하여 언급.
+• 빗질해주면 좋아하는 듯하다. 묶는 건 그닥. (거절은 안함)
+• 섣불리 행동하지 않는다. 생각부터 하는 편. ···상황따라.</div>
+      </section>
+
+    </div>
+
+    <!-- L / H / S SECTION -->
+    <section class="glass-card rounded-2xl p-6 shadow-lg space-y-4">
+      <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+        <i class="fa-solid fa-layer-group"></i> L / H / S
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+        
+        <!-- Like -->
+        <div class="bg-moss-800/40 p-4 rounded-xl border border-moss-600/30">
+          <span class="text-xs font-bold text-frog-accent uppercase tracking-wider block mb-1">
+            <i class="fa-solid fa-thumbs-up mr-1"></i> Like (좋아하는 것)
+          </span>
+          <div class="text-moss-200">개구리, 빗질, 치료자</div>
+        </div>
+
+        <!-- Hate -->
+        <div class="bg-moss-800/40 p-4 rounded-xl border border-moss-600/30">
+          <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-1">
+            <i class="fa-solid fa-thumbs-down mr-1"></i> Hate (싫어하는 것)
+          </span>
+          <div class="text-moss-200">오만, 안전불감증</div>
+        </div>
+
+        <!-- Scared -->
+        <div class="bg-moss-800/40 p-4 rounded-xl border border-moss-600/30">
+          <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider block mb-1">
+            <i class="fa-solid fa-ghost mr-1"></i> Scared (무서워하는 것)
+          </span>
+          <div class="text-moss-200">치유해주는 것.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MEMORABLE MEMORY -->
+    <section class="glass-card rounded-2xl p-6 shadow-lg space-y-3">
+      <h2 class="text-base font-semibold text-frog-accent border-b border-moss-600/40 pb-2 flex items-center gap-2">
+        <i class="fa-solid fa-book-bookmark"></i> 인상 깊은 추억
+      </h2>
+      <div class="text-sm text-moss-200 leading-relaxed whitespace-pre-line">
+멋모를 핏덩이 시절, 카에루는 연못에 자주 잠겨들어갔다. 목 끝까지 오는 시원한 감각과 올챙이들이 지나가는 촉감. 단지 그것이 좋아서. 차가운 수면이 체온을 앗아갔지만 아무래도 상관없었을 천진난만함과 무지한 행동은 작고 가녀린 몸에 유해를 안겨주었다. 오들오들, 바들바들. 푹 젖은 짐승처럼. 그것이 눈여겨 와졌던 걸까─이를 가엾이 여겨 동정 어린 시선을 버젓이 보이며 약과 온기를 불어준 이가 있었다나. 나이도, 얼굴도, 목소리마저도 기억하지 못하지만. 그 순간만큼은 꿈에서도, 현실에서도 또렷이 불완전한 필름으로 남아있다고.</div>
+    </section>
+
+    <!-- SECRET ARCHIVE TOGGLE SECTION (SECRET SETTING) -->
+    <section class="glass-card-secret rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden transition-all duration-300">
+      
+      <!-- Top Bar Header for Secret Section -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-moss-500/40 pb-4">
+        <div>
+          <span class="text-xs font-bold text-red-400 uppercase tracking-widest flex items-center gap-1.5 mb-1">
+            <i class="fa-solid fa-lock"></i> RESTRICTED ACCESS
+          </span>
+          <h2 class="text-xl font-bold text-moss-100 gowun-font flex items-center gap-2">
+            호쿠세이고교 비공개 비밀설정 문서
+          </h2>
+        </div>
+
+        <!-- Unlock Toggle Button -->
+        <button id="secretToggleBtn" onclick="toggleSecret()" class="px-5 py-2.5 rounded-xl bg-frog-accent text-moss-900 font-bold hover:bg-frog-glow transition duration-200 shadow-md flex items-center gap-2 text-sm cursor-pointer">
+          <i id="secretIcon" class="fa-solid fa-lock"></i> <span id="secretBtnText">비밀 문서 열람 (CLICK)</span>
+        </button>
+      </div>
+
+      <!-- LOCKED STATE OVERLAY (Shown when hidden) -->
+      <div id="secretLockedOverlay" class="py-12 flex flex-col items-center justify-center text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-moss-800/80 border border-moss-500/30 flex items-center justify-center text-moss-400 text-2xl">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <p class="text-moss-300 font-medium text-sm">기록이 잠겨있습니다.</p>
+        <p class="text-xs text-moss-400/70">상단의 [비밀 문서 열람] 버튼을 누르면 기밀 설정이 해제됩니다.</p>
+      </div>
+
+      <!-- UNLOCKED SECRET CONTENT (Hidden by default) -->
+      <div id="secretContent" class="space-y-6 pt-6 animate-fade-in hidden">
+        
+        <!-- Secret Profile Detail -->
+        <div class="space-y-2">
+          <h3 class="text-xs font-bold text-moss-300 uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-user-secret text-frog-accent"></i> 비밀설정
+          </h3>
+          <div class="text-sm text-moss-200 leading-relaxed bg-moss-900/60 p-4 rounded-xl border border-moss-700/40 whitespace-pre-line">
+출생 직후부터 부친이 부재했으며, 8세 무렵 모친 또한 가출하여 이후 돌아오지 않았다. 유유상종이라 하던가! 이에 불만도, 울음을 삼키기도 전에 카에루는 그저 혹여라······ 돌아오지 않을까하여 눈물 한방울 흘리지 않고 10년을 기다렸다. 기다림 끝에 돌아온 것 순백의 혹독한 겨울처럼. 익숙한 감감무소식 뿐.
+
+2년 동안 조모의 보호 아래 성장하였으나 조모께서 지병 악화로 별세하였다, 사랑을 나눌 때의 한 시간은 이별의 하루보다 짧다는 그 문장이, 그리도 와닿을 수 밖에 없다나. 이후 원거리 친척의 지원이 일부 있었으나 사실상 홀로 자립한 셈이었단다. 그 당시에 이 모든 것은 사실 달콤한 꿈이 아니었을까. 카에루는 어린 나이에 심오한 사념에 잠긴 적이 있다. 역시나 잠깐이었다.
+
+호쿠세이 고교 1학년 재학 당시, 가족처럼 의지하던 시한부 장애인 친구. 목소리만을 겨우 기억한다. 사글사글하고 따뜻한 봄처럼, 어떨 땐 단호하다 못해 냉담하지만 냉담 뒤에는 지독히 온화한 걱정을 품은 가을처럼. 어쩌면 조모와도 같은 제게 과분한 온정을 주었던 사람. ──다리도, 심장도 불편하던 그 친구는 바보 같고. 엉뚱하고. 칠칠맞지 못하는 카에루를 자신보다 더 챙겨주었다. 그 호의가 달콤한 꿈처럼 빠르게 지나칠 것을 알면서도, 카에루는 그 봄에 녹아들었고 그 가을에 잔뜩 긴장하며 금방 사라질 이에게 정을 주고 의지하였다. 겨울철 친구의 심부전 증세가 급격히 악화되어운명을 달리하였기 전, 눈밭에서의 마지막 순간을 카에루는 여전히 기억하고 있다. 아니, 잊지 못 하고 있다. 단조로운 목소리. 가을에 가까운 쓸쓸한 “走れ” 부르는 것이 아니었다. 이 눈밭에서, 제게서 멀리멀리. 아주 멀리 떨어져 달리라는 소리. 끝까지 걱정이었고 끝까지 온화한 친구에게 돌아온다고 약속했다. 우스운 소리였을테지. 아마도.
+
+하시레, 하시레, 하시레.
+이 이름을 잊는다면
+단순 꿈으로 치부할 수 있었을지도 모른다.</div>
+        </div>
+
+        <!-- Secret Summary -->
+        <div class="space-y-2">
+          <h3 class="text-xs font-bold text-moss-300 uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-file-contract text-frog-accent"></i> 비밀설정 요약
+          </h3>
+          <div class="text-sm text-moss-200 bg-moss-900/60 p-4 rounded-xl border border-moss-700/40 leading-relaxed whitespace-pre-line">
+» 태어났을 때부터 아버지 부재, 8살 때 어머니가 집을 나갔고 돌아오지 않음.
+
+» 2년동안 친할머니의 도움으로 자랐지만 병세 악화로 사망, 먼 친척의 생활 보탬이 있으나 거의 혼자 자란 격.
+
+» 호쿠세이 고교 1학년 시기, 카에루를 부양하다시피 챙겨준 시한부 장애인 친우가 있었음. 말기 심부전이 겨울의 지속됨으로써 급격히 악화됨. 결국 눈밭을 마지막으로 함께하고 친우는 사망.
+
+❑ 뇌가 의도적으로 소중한 추억을 망각시킴. 일종의 방어기제. / 흐릿한 기억이지만 자신이 아플 때, 장애인 친우가 늘 응급처치를 해주었기에 무의식적으로 자길 치료해 주는 사람과 친우를 겹쳐봐 '자신을 치료하다가 끝내 죽는다.'가 단순하게 박혀있어 치유해 주는 것을 무서워함.</div>
+        </div>
+
+        <!-- Items / Belongings -->
+        <div class="space-y-2">
+          <h3 class="text-xs font-bold text-moss-300 uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-box-archive text-frog-accent"></i> 소지품
+          </h3>
+          <div class="text-sm text-moss-200 bg-moss-900/60 p-4 rounded-xl border border-moss-700/40 leading-relaxed whitespace-pre-line">개구리 키링, 개구리 스티커, 머리빗</div>
+        </div>
+
+        <!-- RP Options (비설털이 & 퍼블 여부 - Read-only display) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-moss-900/70 p-4 rounded-xl border border-moss-600/40 flex items-center justify-between">
+            <span class="text-sm font-semibold text-moss-200">비설털이 여부</span>
+            <span class="px-3 py-0.5 rounded-md bg-frog-accent/20 text-frog-accent font-bold text-sm border border-frog-accent/30">O</span>
+          </div>
+          <div class="bg-moss-900/70 p-4 rounded-xl border border-moss-600/40 flex items-center justify-between">
+            <span class="text-sm font-semibold text-moss-200">퍼블 여부</span>
+            <span class="px-3 py-0.5 rounded-md bg-frog-accent/20 text-frog-accent font-bold text-sm border border-frog-accent/30">O</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-xs text-moss-400/60 space-y-1">
+      <p>もどる Archive System © Hokusei High School Secret Document</p>
+    </footer>
+
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    let isSecretUnlocked = false;
+
+    // Toggle Secret Document Locked/Unlocked
+    function toggleSecret() {
+      const secretContent = document.getElementById('secretContent');
+      const secretOverlay = document.getElementById('secretLockedOverlay');
+      const secretBtnText = document.getElementById('secretBtnText');
+      const secretIcon = document.getElementById('secretIcon');
+
+      isSecretUnlocked = !isSecretUnlocked;
+
+      if (isSecretUnlocked) {
+        secretContent.classList.remove('hidden');
+        secretOverlay.classList.add('hidden');
+        secretBtnText.innerText = "비밀 문서 잠그기";
+        secretIcon.className = "fa-solid fa-lock-open";
+      } else {
+        secretContent.classList.add('hidden');
+        secretOverlay.classList.remove('hidden');
+        secretBtnText.innerText = "비밀 문서 열람 (CLICK)";
+        secretIcon.className = "fa-solid fa-lock";
+      }
+    }
+  </script>
+
+</body></html>
